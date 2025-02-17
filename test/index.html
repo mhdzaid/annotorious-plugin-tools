@@ -38,6 +38,7 @@
 
       window.onload = function() {
         var anno = createImageAnnotator('sample-image');
+        anno.setUserSelectAction("EDIT")
 
         anno.on('createAnnotation', function (annotation) {
           console.log('created', annotation);
@@ -51,10 +52,14 @@
           console.log('deleted', annotation);
         });
 
+        anno.on('clickAnnotation', (annotation) => {
+          console.log('User clicked annotation: ' + annotation.id);
+        });
+
         // Mount selector pack extension
         mountToolsPlugin(anno);
-        
-        anno.setDrawingTool('ellipse');
+
+        anno.setDrawingTool('freehand');
       }
     </script>
   </body>

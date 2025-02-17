@@ -46,5 +46,8 @@
   },
   "peerDependencies": {
     "@annotorious/openseadragon": "^3.0.9"
+  },
+  "dependencies": {
+    "@annotorious/annotorious": "latest"
   }
 }

@@ -1,2 +1,2 @@
-export { default as EllipseEditor } from './EllipseEditor.svelte';
-export { default as RubberbandEllipse } from './RubberbandEllipse.svelte';
+export {default as FreeHandEditor} from './FreeHandEditor.svelte';
+export {default as RubberbandFreeHand} from './RubberbandFreeHand.svelte';
